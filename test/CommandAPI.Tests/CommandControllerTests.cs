@@ -310,6 +310,7 @@ namespace CommandAPI.Tests
     public void DeleteCommand_Returns_404NotFound_WhenNonExistentResourceIDSubmitted()
     {
       //Arrange 
+      // added 9/1/20 to trigger
       mockRepo.Setup(repo =>
         repo.GetCommandById(0)).Returns(() => null);
 
